@@ -1,0 +1,575 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\t7_slg_pc_editor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\t7_slg_pc_editor.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About t7_slg_pc_editor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Редактор настроек прибора М3А. Версия 5.1.1.0",
+                    IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C), AlcorLabs, 2016",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_T7_SLG_PC_EDITOR_DIALOG DIALOGEX 0, 0, 402, 537
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION 
+"Редактор настроек прибора проекта МЛГ3А. Версия 5.1.1.0 (2016.07.20 17:10)"
+
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_CMB_COM,40,15,40,45,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CMB_PORT_SPEED,135,15,95,45,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Соединить",IDC_BTN_CONNECT,260,15,50,15
+    PUSHBUTTON      "Разъединить",IDC_BTN_DISCONNECT,340,15,50,15,
+                    WS_DISABLED
+    PUSHBUTTON      "Запрос",IDC_BTN_REQUEST_AMPL,140,85,35,15,BS_MULTILINE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_AMPL_CODE_IN,180,85,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      ">",IDC_BTN_SETREADTOSENT_AMPL,235,86,10,15
+    EDITTEXT        IDC_EDT_AMPL_CODE_OUT,250,85,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Отправить",IDC_BTN_SEND_AMPL,305,86,40,15,WS_DISABLED
+    EDITTEXT        IDC_EDT_TACT_CODE_IN,180,100,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      ">",IDC_BTN_SETREADTOSENT_TACT,235,100,10,15
+    EDITTEXT        IDC_EDT_TACT_CODE_OUT,250,100,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Отправить",IDC_BTN_SEND_TACTCODE,305,100,40,15,
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_M_COEFF_IN,180,115,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      ">",IDC_BTN_SETREADTOSENT_MCOEFF,235,115,10,15
+    EDITTEXT        IDC_EDT_M_COEFF_OUT,250,115,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Отправить",IDC_BTN_SEND_M_COEFF,305,115,40,15,
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_START_MODE_IN,180,130,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      ">",IDC_BTN_SETREADTOSENT_STARTMODE,235,131,10,15
+    EDITTEXT        IDC_EDT_START_MODE_OUT,250,130,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Отправить",IDC_BTN_SEND_START_MODE,305,131,40,15,
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_MIN_CUR1_IN,180,195,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      ">",IDC_BTN_SETREADTOSENT_I1MIN,235,195,10,15
+    EDITTEXT        IDC_EDT_MIN_CUR1_OUT,250,195,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Отправить",IDC_BTN_SEND_I1_MIN,305,195,40,15,
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_MIN_CUR2_IN,180,211,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      ">",IDC_BTN_SETREADTOSENT_I2MIN,235,211,10,15
+    EDITTEXT        IDC_EDT_MIN_CUR2_OUT,250,211,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Отправить",IDC_BTN_SEND_I2_MIN,305,211,40,15,
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_MIN_AMPL_ANG_IN,180,180,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      ">",IDC_BTN_SETREADTOSENT_AMPLANGMIN,235,180,10,15
+    EDITTEXT        IDC_EDT_MIN_AMPL_ANG_OUT,250,180,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Отправить",IDC_BTN_SEND_AMPLANG_MIN,305,180,40,15,
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_DEC_COEFF_IN,180,145,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      ">",IDC_BTN_SETREADTOSENT_DECCOEFF,235,145,10,15
+    EDITTEXT        IDC_EDT_DEC_COEFF_OUT,250,145,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Отправить",IDC_BTN_SEND_DEC_COEFF,305,145,40,15,
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_SIGN_COEFF_IN,180,290,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      ">",IDC_BTN_SETREADTOSENT_SIGN,235,291,10,15
+    EDITTEXT        IDC_EDT_SIGN_COEFF_OUT,250,290,40,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Отправить",IDC_BTN_SEND_SIGNCOEFF,305,290,40,15,
+                    WS_DISABLED
+    PUSHBUTTON      "Запрос",IDC_BTN_REQUEST_SERNUM,140,305,35,15,
+                    BS_MULTILINE | WS_DISABLED
+    EDITTEXT        IDC_EDT_SER_NUM_IN,180,305,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      ">",IDC_BTN_SETREADTOSENT_DEVSERNUM,235,305,10,15
+    EDITTEXT        IDC_EDT_SER_NUM_OUT,250,305,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Отправить",IDC_BTN_SEND_SERIAL,305,305,40,15,
+                    WS_DISABLED
+    PUSHBUTTON      "Запрос",IDC_BTN_REQUEST_DATE,140,319,35,15,BS_MULTILINE | 
+                    WS_DISABLED
+    CONTROL         "",IDC_DTP_DATE_IN,
+                    "{20DD1B9E-87C4-11D1-8BE3-0000F8754DA1}",WS_TABSTOP,180,
+                    322,55,13
+    PUSHBUTTON      ">",IDC_BTN_SETREADTOSENT_DATE,235,319,10,15
+    CONTROL         "",IDC_DTP_DATE_OUT,
+                    "{20DD1B9E-87C4-11D1-8BE3-0000F8754DA1}",WS_TABSTOP,250,
+                    321,55,13
+    PUSHBUTTON      "Отправить",IDC_BTN_SEND_DATE,305,319,40,15,WS_DISABLED
+    PUSHBUTTON      "Запрос",IDC_BTN_REQUEST_ORG,140,335,35,15,BS_MULTILINE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_ORGANIZATION_IN,180,335,150,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      ">",IDC_BTN_SETREADTOSENT_ORG,335,335,10,15
+    EDITTEXT        IDC_EDT_ORGANIZATION_OUT,140,355,160,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Отправить",IDC_BTN_SEND_ORGANIZATION,305,355,40,15,
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_TCALIB_T1_TD1,80,415,35,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_TCALIB_T2_TD1,135,415,35,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_TCALIB_T1_TD2,80,430,35,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_TCALIB_T2_TD2,135,430,35,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_TCALIB_T1_TD3,80,446,35,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_TCALIB_T2_TD3,135,446,35,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Сбросить данные калибровки",IDC_BTN_RESET_CALIB,245,464,
+                    130,20
+    PUSHBUTTON      "Выход",IDOK,325,516,70,15
+    CONTROL         "",IDC_MSCOMM,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,185,510,25,23
+    GROUPBOX        "COM-порт",IDC_STATIC,5,5,390,65
+    LTEXT           "Порт:",IDC_STATIC,10,17,25,10,SS_CENTERIMAGE
+    LTEXT           "Скорость:",IDC_STATIC,90,17,40,10
+    GROUPBOX        "Настройки прибора. Страница 1",IDC_STATIC,5,75,390,90
+    LTEXT           "Код амплитуды:",IDC_STATIC,15,85,110,15,SS_CENTERIMAGE
+    LTEXT           "Код такта подставки:",IDC_STATIC,15,100,110,15,
+                    SS_CENTERIMAGE
+    LTEXT           "Коэффициент М:",IDC_STATIC,15,115,110,15,SS_CENTERIMAGE
+    LTEXT           "Начальная мода:",IDC_STATIC,15,130,110,15,
+                    SS_CENTERIMAGE
+    LTEXT           "Серийный номер:",IDC_STATIC,15,305,110,15,
+                    SS_CENTERIMAGE
+    LTEXT           "Организация:",IDC_STATIC,15,335,110,35,SS_CENTERIMAGE
+    LTEXT           "Дата ??? прибора:",IDC_STATIC,15,319,110,15,
+                    SS_CENTERIMAGE
+    LTEXT           "Минимальный ток I1 (mA):",IDC_STATIC,15,195,110,15,
+                    SS_CENTERIMAGE
+    LTEXT           "Минимальный ток I2 (mA):",IDC_STATIC,15,211,110,15,
+                    SS_CENTERIMAGE
+    LTEXT           "Минимальный AmplAng (ADC_V):",IDC_STATIC,15,180,110,15,
+                    SS_CENTERIMAGE
+    LTEXT           "Коэффициент вычета:",IDC_STATIC,15,145,110,15,
+                    SS_CENTERIMAGE
+    LTEXT           "Знаковый коэффициент dU:",IDC_STATIC,15,290,110,15,
+                    SS_CENTERIMAGE
+    GROUPBOX        "Температурная калибровка",IDC_STATIC,5,380,390,109
+    CTEXT           "T1",IDC_STATIC,80,390,35,10
+    CTEXT           "T2",IDC_STATIC,135,390,35,10
+    LTEXT           "Термодатчик 1",IDC_STATIC,15,415,55,15,SS_CENTERIMAGE
+    LTEXT           "Термодатчик 2",IDC_STATIC,15,431,55,15,SS_CENTERIMAGE
+    LTEXT           "Термодатчик 3",IDC_STATIC,15,446,55,15,SS_CENTERIMAGE
+    LTEXT           "Состояние связи:",IDC_STATIC,10,35,75,10
+    LTEXT           "Разъединено",IDC_STR_CONN_STATE,90,35,245,10
+    LTEXT           "Масштабный коэффициент прибора:",IDC_STATIC,5,494,125,
+                    15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDT_SCALE_COEFF,135,494,35,15,ES_AUTOHSCROLL
+    LTEXT           "Код ошибки:",IDC_STATIC,290,495,45,15,SS_CENTERIMAGE
+    CTEXT           "-",IDC_LBL_EMERGENCY,340,495,55,15,SS_CENTERIMAGE | 
+                    WS_BORDER
+    PUSHBUTTON      "Применить",IDC_BTN_APPLY_SCALE_COEFF,175,494,45,15
+    LTEXT           "-",IDC_STR_MC_VER,90,50,90,15,SS_CENTERIMAGE
+    LTEXT           "Температура",IDC_STATIC,15,400,55,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDT_TCALIB_T1,80,400,35,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDT_TCALIB_T2,135,400,35,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Выполнить калибровку",IDC_BTN_SEND_CALIB,245,415,130,20
+    CTEXT           "Температура",IDC_STATIC,255,395,75,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDT_TCALIB_T_CURRENT,335,395,35,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Обновить",IDC_BTN_REQUEST_CALIB,80,465,90,20
+    PUSHBUTTON      "Запрос",IDC_BTN_REQUEST_TACT_CODE,140,100,35,15,
+                    BS_MULTILINE | WS_DISABLED
+    PUSHBUTTON      "Запрос",IDC_BTN_REQUEST_M_COEFF,140,115,35,15,
+                    BS_MULTILINE | WS_DISABLED
+    PUSHBUTTON      "Запрос",IDC_BTN_REQUEST_START_MODE,140,130,35,15,
+                    BS_MULTILINE | WS_DISABLED
+    PUSHBUTTON      "Запрос",IDC_BTN_REQUEST_CONTROL_I1,140,195,35,15,
+                    BS_MULTILINE | WS_DISABLED
+    PUSHBUTTON      "Запрос",IDC_BTN_REQUEST_CONTROL_I2,140,211,35,15,
+                    BS_MULTILINE | WS_DISABLED
+    PUSHBUTTON      "Запрос",IDC_BTN_REQUEST_CONTROL_AA,140,180,35,15,
+                    BS_MULTILINE | WS_DISABLED
+    PUSHBUTTON      "Запрос",IDC_BTN_REQUEST_DEC_COEFF,140,145,35,15,
+                    BS_MULTILINE | WS_DISABLED
+    PUSHBUTTON      "Запрос",IDC_BTN_REQUEST_SIGN_COEFF,140,290,35,15,
+                    BS_MULTILINE | WS_DISABLED
+    EDITTEXT        IDC_EDT_HV_APPLY_SET_IN,180,225,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      ">",IDC_BTN_SETREADTOSENT_HV_APPLY_SET,235,225,10,15
+    EDITTEXT        IDC_EDT_HV_APPLY_SET_OUT,250,225,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Отправить",IDC_BTN_SEND_HV_APPLY_SET,305,225,40,15,
+                    WS_DISABLED
+    LTEXT           "Количество импульсов 3kV в пачке:",IDC_STATIC,15,225,
+                    123,15,SS_CENTERIMAGE
+    PUSHBUTTON      "Запрос",IDC_BTN_REQUEST_HV_APPLY_SET,140,225,35,15,
+                    BS_MULTILINE | WS_DISABLED
+    LTEXT           "MF:",IDC_STATIC,265,50,15,15,SS_CENTERIMAGE
+    CTEXT           "-",IDC_LBL_MFAILS,285,50,25,15,SS_CENTERIMAGE | 
+                    WS_BORDER
+    LTEXT           "CF:",IDC_STATIC,345,50,15,15,SS_CENTERIMAGE
+    CTEXT           "-",IDC_LBL_CSFAILS,365,50,25,15,SS_CENTERIMAGE | 
+                    WS_BORDER
+    LTEXT           "PC:",IDC_STATIC,185,50,15,15,SS_CENTERIMAGE
+    CTEXT           "-",IDC_LBL_PACKS,205,50,25,15,SS_CENTERIMAGE | 
+                    WS_BORDER
+    PUSHBUTTON      "Save p1",IDC_BTN_SAVE_TO_FLASH_P1,355,85,35,75,
+                    BS_MULTILINE
+    PUSHBUTTON      "Save p2",IDC_BTN_SAVE_TO_FLASH_P2,355,180,35,90,
+                    BS_MULTILINE
+    PUSHBUTTON      "Save p3",IDC_BTN_SAVE_TO_FLASH_P3,355,290,35,80,
+                    BS_MULTILINE
+    LTEXT           "Длительность импульсов HV (msec):",IDC_STATIC,15,240,
+                    125,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDT_HV_APPLY_DUR_SET_IN,180,240,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      ">",IDC_BTN_SETREADTOSENT_HV_APPLY_DUR_SET,235,240,10,15
+    EDITTEXT        IDC_EDT_HV_APPLY_DUR_SET_OUT,250,240,50,15,
+                    ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Отправить",IDC_BTN_SEND_HV_APPLY_DUR_SET,305,240,40,15,
+                    WS_DISABLED
+    PUSHBUTTON      "Запрос",IDC_BTN_REQUEST_HV_APPLY_DUR_SET,140,240,35,15,
+                    BS_MULTILINE | WS_DISABLED
+    PUSHBUTTON      "Заблокировать устройство",IDC_BTN_LOCK_DEVICE,5,515,100,
+                    15
+    GROUPBOX        "Настройки прибора.Страница 2",IDC_STATIC,5,170,390,105
+    GROUPBOX        "Настройки прибора.Страница 3",IDC_STATIC,5,280,390,95
+    PUSHBUTTON      "Версия ПО",IDC_BTN_VERSION,10,45,75,20
+    CONTROL         "Spin1",IDC_SPIN_SIGNCOEFF,"msctls_updown32",
+                    UDS_ARROWKEYS | WS_DISABLED,290,291,11,15
+    LTEXT           "Количество пачек поджига:",IDC_STATIC,15,255,120,15,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDT_HV_APPLY_PACKS_IN,180,255,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      ">",IDC_BTN_SETREADTOSENT_HV_APPLY_PACKS,235,255,10,15
+    EDITTEXT        IDC_EDT_HV_APPLY_PACKS_OUT,250,255,50,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Отправить",IDC_BTN_SEND_HV_APPLY_PACKS,305,255,40,15,
+                    WS_DISABLED
+    PUSHBUTTON      "Запрос",IDC_BTN_REQUEST_HV_APPLY_PACKS,140,255,35,15,
+                    BS_MULTILINE | WS_DISABLED
+END
+
+IDD_DLG_SETTINGS DIALOG DISCARDABLE  0, 0, 186, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Настройки"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    CONTROL         "",IDC_MSCOMM,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,10,20,25,23
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_T7_SLG_PC_EDITOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 395
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 530
+    END
+
+    IDD_DLG_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_T7_SLG_PC_EDITOR_DIALOG DLGINIT
+BEGIN
+    IDC_CMB_COM, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_CMB_COM, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_CMB_COM, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_CMB_COM, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_CMB_COM, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_CMB_COM, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_CMB_COM, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_CMB_COM, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_CMB_COM, 0x403, 5, 0
+0x4f43, 0x394d, "\000" 
+    IDC_CMB_COM, 0x403, 6, 0
+0x4f43, 0x314d, 0x0030, 
+    IDC_CMB_COM, 0x403, 6, 0
+0x4f43, 0x314d, 0x0031, 
+    IDC_CMB_COM, 0x403, 6, 0
+0x4f43, 0x314d, 0x0032, 
+    IDC_CMB_PORT_SPEED, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_CMB_PORT_SPEED, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_CMB_PORT_SPEED, 0x403, 7, 0
+0x3231, 0x3038, 0x3030, "\000" 
+    IDC_CMB_PORT_SPEED, 0x403, 7, 0
+0x3532, 0x3036, 0x3030, "\000" 
+    IDC_CMB_PORT_SPEED, 0x403, 7, 0
+0x3634, 0x3830, 0x3030, "\000" 
+    IDC_CMB_PORT_SPEED, 0x403, 7, 0
+0x3135, 0x3032, 0x3030, "\000" 
+    IDC_CMB_PORT_SPEED, 0x403, 7, 0
+0x3239, 0x3631, 0x3030, "\000" 
+    IDC_DTP_DATE_IN, 0x37a, 239, 0
+0x0024, 0x0000, 0x0036, 0x0035, 0x0031, 0x0041, 0x0038, 0x0039, 0x0034, 
+0x0030, 0x002d, 0x0038, 0x0037, 0x0043, 0x0035, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0038, 0x0042, 0x0045, 0x0033, 0x002d, 0x0030, 
+0x0030, 0x0030, 0x0030, 0x0046, 0x0038, 0x0037, 0x0035, 0x0034, 0x0044, 
+0x0041, 0x0031, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0014, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x9400, 0x0008, 0x2c00, 0x0002, 
+0x4100, 0x7f28, 0x000e, 0x0600, 0x2000, 0x0000, 0xdf00, 0x0907, 0x0400, 
+0x1800, 0x0000, 0x0000, 0x0000, 0x0000, 0x0f00, 0x0c27, 0x0500, 0x1f00, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x4100, 0x0106, 0x0100, 0x0100, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0800, 0x0000, 0x0000, 0x0000, 0x0100, 0xcdef, 
+0x00ab, 0x0500, 0x5800, 0x13ee, 0x0400, 0x0000, 0xff00, 0xffff, 0xffff, 
+0xffff, 0x20ff, 0x19f6, 0x0000, 0x0000, 0x1f00, 0xecde, 0x01bd, 0x0500, 
+0xa000, 0x13ee, "\000" 
+    IDC_DTP_DATE_OUT, 0x37a, 239, 0
+0x0024, 0x0000, 0x0036, 0x0035, 0x0031, 0x0041, 0x0038, 0x0039, 0x0034, 
+0x0030, 0x002d, 0x0038, 0x0037, 0x0043, 0x0035, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0038, 0x0042, 0x0045, 0x0033, 0x002d, 0x0030, 
+0x0030, 0x0030, 0x0030, 0x0046, 0x0038, 0x0037, 0x0035, 0x0034, 0x0044, 
+0x0041, 0x0031, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x0014, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x9400, 0x0008, 0x2c00, 0x0002, 
+0x4100, 0x7f28, 0x000e, 0x0600, 0x2000, 0x0000, 0xdf00, 0x0907, 0x0400, 
+0x1800, 0x0000, 0x0000, 0x0000, 0x0000, 0x0f00, 0x0c27, 0x0500, 0x1f00, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x4100, 0x0106, 0x0100, 0x0100, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0800, 0x0000, 0x0000, 0x0000, 0x0100, 0xcdef, 
+0x00ab, 0x0500, 0x5800, 0x13ee, 0x0400, 0x0000, 0xff00, 0xffff, 0xffff, 
+0xffff, 0x20ff, 0x19f6, 0x0000, 0x0000, 0x1f00, 0xecde, 0x01bd, 0x0500, 
+0xa000, 0x13ee, "\000" 
+    IDC_MSCOMM, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0118, 0x0200, 0x0118, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0010, 0x0000, 
+    0
+END
+
+IDD_DLG_SETTINGS DLGINIT
+BEGIN
+    IDC_MSCOMM, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 5,1,1,0
+ PRODUCTVERSION 5,1,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Программа для настройки прибора T39-М3А\0"
+            VALUE "FileVersion", "5, 1, 1, 0\0"
+            VALUE "InternalName", "t39_slg_pc_editor\0"
+            VALUE "LegalCopyright", "Copyright (C) 2009-2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "t7_slg_pc_editor.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "T39-M3A. Редактирование настроек прибора.\0"
+            VALUE "ProductVersion", "5, 1, 1, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About t7_slg_pc_editor..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\t7_slg_pc_editor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
